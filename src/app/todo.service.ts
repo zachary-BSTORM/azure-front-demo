@@ -9,9 +9,7 @@ export interface Todo {
 }
 
 // ng serve -> API locale ; ng build -> API déployée sur Azure
-const apiUrl = isDevMode()
-  ? 'http://localhost:5062/api/todos'
-  : 'https://<ton-api>.azurewebsites.net/api/todos';
+const apiUrl = 'https://demo-ci-cd-cegnctgjeradd8g3.westus2-01.azurewebsites.net/api/todos';
 
 @Injectable({ providedIn: 'root' })
 export class TodoService {
